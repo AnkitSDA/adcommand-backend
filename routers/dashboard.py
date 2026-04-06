@@ -6,7 +6,7 @@ import os
 router = APIRouter()
 
 def use_real_data():
-    return bool(os.getenv("GOOGLE_ADS_REFRESH_TOKEN") and os.getenv("GOOGLE_ADS_DEVELOPER_TOKEN"))
+    return False
 
 @router.get("/summary")
 def get_summary():
