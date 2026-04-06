@@ -8,7 +8,7 @@ app = FastAPI(title="AdCommand API", version="1.0.0")
 # Allow React frontend to talk to this backend
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],
+    allow_origins=["http://localhost:3000","https://adcommand-frontend-4gmbygk9b-ankitsdas-projects.vercel.app"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
